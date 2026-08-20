@@ -88,8 +88,9 @@ img, svg { display: block; max-width: 100%; }
 }
 .brand-word {
   font-family: var(--font-display);
-  font-weight: 700; font-size: 1.05rem; letter-spacing: .12em;
+  font-weight: 700; font-size: 1.35rem; letter-spacing: .12em;
 }
+.brand-footer .brand-word { font-size: 1.05rem; }
 .brand-mark { color: var(--white); }
 .brand:hover .brand-needle { transform: rotate(18deg); }
 .brand-needle { transform-origin: 50px 50px; transition: transform .5s var(--ease-out); }
