@@ -92,7 +92,7 @@ img, svg { display: block; max-width: 100%; }
 }
 .brand-mark { color: var(--white); }
 .brand:hover .brand-needle { transform: rotate(18deg); }
-.brand-needle { transform-origin: 52px 52px; transition: transform .5s var(--ease-out); }
+.brand-needle { transform-origin: 50px 50px; transition: transform .5s var(--ease-out); }
 
 .nav-links { display: flex; align-items: center; gap: 34px; }
 .nav-links a {
