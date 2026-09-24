@@ -772,11 +772,6 @@ img, svg { display: block; max-width: 100%; }
   font-style: normal;
 }
 .legal-contact span { color: var(--text-dim); }
-.legal-fill {
-  background: rgba(255, 107, 26, .16); color: var(--orange-300);
-  border: 1px dashed var(--orange-400); border-radius: 4px;
-  padding: 0 4px; font-weight: 600;
-}
 .legal-contact strong { font-family: var(--font-display); color: var(--white); }
 
 /* ============ FOOTER ============ */
