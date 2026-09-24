@@ -6,11 +6,13 @@
 
   /* ---------- Loader ---------- */
   const loader = document.getElementById('loader');
-  window.addEventListener('load', () => {
-    setTimeout(() => loader.classList.add('done'), 350);
-  });
-  // Safety: never trap the user behind the loader
-  setTimeout(() => loader.classList.add('done'), 2500);
+  if (loader) {
+    window.addEventListener('load', () => {
+      setTimeout(() => loader.classList.add('done'), 350);
+    });
+    // Safety: never trap the user behind the loader
+    setTimeout(() => loader.classList.add('done'), 2500);
+  }
 
   /* ---------- Nav ---------- */
   const nav = document.getElementById('nav');
@@ -185,16 +187,18 @@
   /* ---------- Contact form ---------- */
   const form = document.getElementById('contactForm');
   const success = document.getElementById('formSuccess');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
-    // Hook up your form backend here (Formspree, Netlify Forms, own API, ...)
-    success.hidden = false;
-    form.reset();
-  });
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      // Hook up your form backend here (Formspree, Netlify Forms, own API, ...)
+      success.hidden = false;
+      form.reset();
+    });
+  }
 
   /* ---------- Footer year ---------- */
   document.getElementById('year').textContent = new Date().getFullYear();
