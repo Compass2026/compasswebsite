@@ -8,6 +8,8 @@ Pure static HTML + CSS + vanilla JS. No frameworks, no build step — it loads i
 
 ```
 index.html        # single-page site
+privacy.html      # Privacy Policy
+terms.html        # Terms & Conditions
 css/style.css     # design system + all styles
 js/main.js        # scroll reveals, count-ups, particles, nav, form
 assets/           # favicon
@@ -36,4 +38,6 @@ Drop it on Vercel, Netlify, or GitHub Pages as-is — no config needed.
 
 ## TODO
 
+- Fill in the governing-law placeholders (`[STATE]`, `[COUNTY, STATE]`) in `terms.html` §12 — they're highlighted in orange on the page.
+- Have counsel review `privacy.html` and `terms.html` before launch, and update both if you add analytics, cookies, or new data processors.
 - Wire the contact form to a backend (Formspree, Netlify Forms, or an API route) — see the submit handler in `js/main.js`.
